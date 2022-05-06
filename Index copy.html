@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <style>
+    
+    /* ID */
+
+    #Visual{
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(255, 153, 0);           
+            height: 100%;
+            width: 100%;
+            border-radius:20px;
+            margin-top: 2%;
+            margin-bottom: 2%;
+
+        } 
+
+    /* TAGS */
+        body{
+            background-repeat: no-repeat; /* Faz com que a imagem não seja repetida varias vezes */
+            background-size:cover; /* Completa todo fundo com a imagem */
+            background-position: center, center; /* Define os pontos X,Y apartir do centro */
+                
+            display:flex; 
+            flex-direction:column; 
+            justify-content:center; 
+            align-items:center;         
+            }
+           
+           main{
+            margin-top: 20px;
+        }
+        
+    /* CLASS */
+        .Container{
+            display: flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:center;
+            background-color:rgba(255, 255, 255, 0);
+         
+        }
+
+        .Produto{
+            transition: all 0.5s;
+            cursor: pointer;
+            background-color: rgba(209, 31, 0, 0.74);
+            margin:10px;
+            height: 300px;
+            width: 300px;
+            border-radius:10px;           
+
+        }
+
+        .Descript{
+            transition: all 0.5s;
+            cursor: pointer;
+            background-color: rgba(0, 209, 45, 0.74);
+            margin:10px;
+            height: 100px;
+            width: 300px;
+            border-radius:10px;
+            display: none;
+
+        }
+        .Produto:hover{
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+            background-color: rgb(21, 0, 209);
+            margin:10px;
+            border-radius:10px;
+        }
+        .Descript:hover {
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+        
+
+
+
+
+        
+    
+    </style>
+</head>
+<body>
+    <main>
+        <section id="Visual">       
+            <div class="Container" id="C1">
+                <div class="Produto" id="P1">
+
+                </div>
+            
+            </div>   
+            <div class="Container" id="Des">
+                <div class="Descript" id="D1">
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+   </body>
+
+</html>
